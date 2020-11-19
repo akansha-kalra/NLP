@@ -29,7 +29,5 @@ if __name__ == "__main__":
 
     
 
-    with open(sys.argv[3], 'w') as FINAL_RESULTS:
-        for result in RESULTS:
-            FINAL_RESULTS.write(str(result) + "\n")
-        
+    for result in RESULTS:
+        sys.stdout.write(str(result) + "\n")
